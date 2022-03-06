@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-CuOF+2SnTUfTwSZjCXf01h7uYhfOBuxIhGKPbfEJ3+FqH/s6cIFN9bGr1HmAg4fQ" crossorigin="anonymous" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/application.css" />
+    <title>Welcome</title>
+</head>
+
+<body>
+    <nav class="navbar navbar-expand-lg">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="./images/indiretto_logo.png" alt="" width="" height="30" />
+            </a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+					<i class="fa fa-bars" style="color: black"></i>
+				</button>
+            <div class="collapse navbar-collapse" id="navbarSupportedContent">
+                <ul class="navbar-nav ml-auto mb-2 mb-lg-0">
+                    <li class="nav-item">
+                        <a class="nav-link active" aria-current="page" href="/dashboard.html">Dashboard</a
+							>
+						</li>
+						<li class="nav-item">
+							<a class="nav-link" href="/create.html">Create</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/answers.html">Answers</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="/evaluation.html">Evaluation</a>
+                    </li>
+                    <li class="nav-item">
+                        <button class="btn login-btn" id="logout">Log out</button>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="container">
+            <table class="table" style="margin-top: 60px">
+                <thead>
+                    <tr>
+                        <th scope="col">#</th>
+                        <th scope="col">Team Name</th>
+                        <th scope="col">Level</th>
+                        <th scope="col">Score</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <th scope="row">1</th>
+                        <td>Test Team</td>
+                        <td>3</td>
+                        <td>18567</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-popRpmFF9JQgExhfw5tZT4I9/CI5e2QcuUZPOVXb1m7qUmeR2b50u+YFEYe1wgzy" crossorigin="anonymous"></script>
+    <!-- update the version number as needed -->
+    <script src="/__/firebase/8.0.1/firebase-app.js"></script>
+    <!-- include only the Firebase features as you need -->
+    <script src="/__/firebase/8.0.1/firebase-auth.js"></script>
+    <script src="/__/firebase/8.0.1/firebase-firestore.js"></script>
+    <script src="/__/firebase/8.0.1/firebase-functions.js"></script>
+    <!-- 
+      initialize the SDK after all desired features are loaded, set useEmulator to false
+      to avoid connecting the SDK to running emulators.
+    -->
+    <script src="/__/firebase/init.js?useEmulator=true"></script>
+    <script src="./js/logout.js"></script>
+    <script src="./js/authorize-admin.js"></script>
+</body>
+
+</html>

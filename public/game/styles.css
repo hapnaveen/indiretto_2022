@@ -1,0 +1,17 @@
+canvas {
+  border: 1px solid #d3d3d3;
+  background-image: url("background.png");
+  background-size: cover;
+}
+
+body {
+  text-align: center;
+}
+
+button {
+  height: 40pt;
+}
+
+#marks {
+  font-size: x-large;
+}

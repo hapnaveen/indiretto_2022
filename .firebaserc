@@ -1,0 +1,17 @@
+{
+  "projects": {
+    "default": "indiretto-bb700"
+  },
+  "targets": {
+    "indiretto-bb700": {
+      "hosting": {
+        "client": [
+          "indiretto-bb700"
+        ],
+        "admin": [
+          "indiretto-admin"
+        ]
+      }
+    }
+  }
+}
